@@ -19,6 +19,11 @@ ext {
 
     mockitoVersion = '1.9.5'
 }
+allprojects {
+    task dependencyDiagram{
+        println "hey dep diagram!"
+    }
+}
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.1"

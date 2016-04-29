@@ -4,3 +4,5 @@ new File(rootDir, "applications").eachDir { dir -> include "applications/${dir.n
 new File(rootDir, "components").eachDir { dir -> include "components/${dir.name}" }
 
 include "feature-tests"
+include 'dependency-diagram'
+

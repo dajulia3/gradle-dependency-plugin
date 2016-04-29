@@ -1,0 +1,19 @@
+group 'com.github.joeorodriguez'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'java-gradle-plugin'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+
+    testCompile('junit:junit:4.11')
+    testCompile gradleTestKit()
+    testCompile('org.hamcrest:hamcrest-all:1.3')
+}
